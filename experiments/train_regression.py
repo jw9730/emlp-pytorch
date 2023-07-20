@@ -5,11 +5,11 @@ from torch.utils.data import DataLoader
 from oil.utils.utils import FixedNumpySeed, FixedPytorchSeed
 from oil.datasetup.datasets import split_dataset
 
-from emlp_pytorch.emlp.trainer.model_trainer import RegressorPlus
-from emlp_pytorch.emlp.trainer.utils import LoaderTo
-from emlp_pytorch.emlp.nn import MLP, EMLP, Standardize
-from emlp_pytorch.emlp.interface import Interface, GroupAugmentation
-from emlp_pytorch.emlp.datasets import Inertia
+from emlp_pytorch.trainer.model_trainer import RegressorPlus
+from emlp_pytorch.trainer.utils import LoaderTo
+from emlp_pytorch.nn import MLP, EMLP, Standardize
+from emlp_pytorch.interface import Interface, GroupAugmentation
+from emlp_pytorch.datasets import Inertia
 
 
 log_levels = {

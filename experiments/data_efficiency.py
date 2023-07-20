@@ -2,10 +2,10 @@
 import copy
 from oil.tuning.study import train_trial, Study
 from oil.tuning.args import argupdated_config
-from emlp_pytorch.emlp.datasets import O5Synthetic, ParticleInteraction, Inertia
-from emlp_pytorch.emlp.groups import SO, O, O13, SO13, SO13p
-from emlp_pytorch.emlp.nn import MLP, EMLP
-from experiment_train_regression import makeTrainer
+from emlp_pytorch.datasets import O5Synthetic, ParticleInteraction, Inertia
+from emlp_pytorch.groups import SO, O, O13, SO13, SO13p
+from emlp_pytorch.nn import MLP, EMLP
+from train_regression import makeTrainer
 
 
 if __name__ == "__main__":

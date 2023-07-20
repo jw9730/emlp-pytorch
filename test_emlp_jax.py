@@ -6,14 +6,14 @@ os.environ["CUDA_VISIBLE_DEVICES"]="1,5,6,7"
 from emlp.groups import *
 from emlp.reps.representation import *
 from emlp.datasets import *
-from tests.equivariance_tests import test_sum, test_prod, \
+from emlp.tests.equivariance_tests import test_sum, test_prod, \
     test_high_rank_representations, \
     test_equivariant_matrix as test_equivariant_matrix_1, \
     test_bilinear_layer, test_large_representations
-from tests.product_groups_tests import test_symmetric_mixed_tensor, \
+from emlp.tests.product_groups_tests import test_symmetric_mixed_tensor, \
     test_symmetric_mixed_tensor_sum, test_symmetric_mixed_products, \
     test_equivariant_matrix as test_equivariant_matrix_2
-from tests.model_tests import test_init_forward_and_equivariance, \
+from emlp.tests.model_tests import test_init_forward_and_equivariance, \
     test_utilities, test_bespoke_representations
 
 

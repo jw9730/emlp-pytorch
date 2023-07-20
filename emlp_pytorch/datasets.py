@@ -11,7 +11,6 @@ class Inertia():
     """ Inertia tensor dataset """
 
     def __init__(self, N=1024, k=5):
-        super().__init__()
         self.dim = (1+3)*k
         self.X = np.random.randn(N, self.dim)
         self.X[:, :k] = np.log(1+np.exp(self.X[:, :k]))  # Masses

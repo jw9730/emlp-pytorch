@@ -1,7 +1,7 @@
 """ Tests for product groups. """
 import torch
-from ..emlp.groups import *
-from ..emlp.reps import *
+from emlp_pytorch.groups import *
+from emlp_pytorch.reps import *
 from .equivariance_tests import rel_error
 
 

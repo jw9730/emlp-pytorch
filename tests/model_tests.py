@@ -2,9 +2,9 @@
 import torch
 from torch.utils.data import DataLoader
 from oil.utils.utils import FixedNumpySeed, FixedPytorchSeed
-from ..emlp.nn import EMLP
-from ..emlp.groups import S, SO, DirectProduct
-from ..emlp.reps import vis, sparsify_basis, V, Rep, LazyKron, T
+from emlp_pytorch.nn import EMLP
+from emlp_pytorch.groups import S, SO, DirectProduct
+from emlp_pytorch.reps import vis, sparsify_basis, V, Rep, LazyKron, T
 from .equivariance_tests import rel_error, scale_adjusted_rel_error
 
 

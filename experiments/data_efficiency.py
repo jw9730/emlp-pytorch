@@ -5,7 +5,7 @@ from oil.tuning.args import argupdated_config
 from emlp_pytorch.datasets import O5Synthetic, ParticleInteraction, Inertia
 from emlp_pytorch.groups import SO, O, O13, SO13, SO13p
 from emlp_pytorch.nn import MLP, EMLP
-from train_regression import makeTrainer
+from .train_regression import makeTrainer
 
 
 if __name__ == "__main__":

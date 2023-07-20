@@ -1,9 +1,9 @@
 """ Tests for equivariance of representations and neural networks. """
 import logging
 import torch
-from ..emlp.groups import *
-from ..emlp.reps import *
-from ..emlp.nn import uniform_rep
+from emlp_pytorch.groups import *
+from emlp_pytorch.reps import *
+from emlp_pytorch.nn import uniform_rep
 
 
 def rel_error(t1, t2):

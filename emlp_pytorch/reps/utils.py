@@ -151,6 +151,9 @@ def krylov_constraint_solve_upto_r(C, r, tol=1e-5, lr=1e-2):
             return krylov_constraint_solve_upto_r(C, r, tol, lr=lr/3)
     else:
         raise ConvergenceError("Failed to converge.")
+
+    W.requires_grad = False
+
     # Orthogonalize solution at the end
     U, S, _ = torch.linalg.svd(W, full_matrices=False)
     # Would like to do economy SVD here (to not have the unecessary O(n^2) memory cost)
